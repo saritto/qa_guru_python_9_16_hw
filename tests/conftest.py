@@ -2,7 +2,7 @@ import pytest
 from selene import browser
 
 
-@pytest.fixture(params=[(1920, 1080), (1280, 720)])
+@pytest.fixture(params=[(1820, 1080), (1280, 720)])
 def desktop_browser(request):
     width, height = request.param
     browser.config.window_width = width
